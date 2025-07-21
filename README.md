@@ -12,7 +12,7 @@
 1. Pages - The Login page elements are located here and values are passed from test logic.
 2. Test - This package contains test logics to validate elements and implemented DDT by incorporating input data from JSON and followed with AAA test structure.
 3. conftest - To create the environment to run the test. This file is located under test package
-4. Utility - This package contains Json file contains test data.
+4. Utility - This package contains Json file contains test data. In test_data.json 4 set of test cases are added.
 5. reports - This directory contais report.html generated after test execurtion and screenshots captured during test runs.
 6. requiremenets.txt - This file contains the packages needed for this project
 7. pytest.ini - Configuration file to customize Pytest options.  
