@@ -1,0 +1,32 @@
+{
+  "login_tests": [
+    {
+      "test_name": "Valid Login",
+      "url":"https://v2.zenclass.in/login",
+      "username": "vigneswaranprathibha@gmail.com",
+      "password": "VZidane$23",
+      "expected_url" : "https://v2.zenclass.in/dashboard"
+    },
+    {
+      "test_name": "Invalid Login",
+      "url": "https://v2.zenclass.in/login",
+      "username": "vigneswara@gmail.com",
+      "password": "VZidane$23",
+      "expected_url": "https://v2.zenclass.in/dashboard"
+    },
+    {
+      "test_name": "Empty Username",
+      "url":"https://v2.zenclass.in/login",
+      "username": "",
+      "password": "VZida",
+      "expected_url" : "https://v2.zenclass.in/dashboard"
+    },
+    {
+      "test_name": "Empty Password",
+      "url":"https://v2.zenclass.in/login",
+      "username": "vigneswaranprathibha@gmail.com",
+      "password": "",
+      "expected_url" : "https://v2.zenclass.in/dashboard"
+    }
+  ]
+}
