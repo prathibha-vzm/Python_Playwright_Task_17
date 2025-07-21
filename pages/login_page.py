@@ -32,7 +32,7 @@ class LoginPage(BasePage):
                self.password_txt_box.wait_for(state="visible") # Wait until username textbox is visible
                self.password_txt_box.fill(password)            # Fill the textbox with the provided username
         except TimeoutError:                                   # Handle in case textbox is not found in time
-            print("Username Textbox not found")
+            print("Password Textbox not found")
 
     # method to check the remember me box
     def check_remember_me(self):
