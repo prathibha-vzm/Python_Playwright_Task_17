@@ -68,4 +68,4 @@ class LoginPage(BasePage):
                 print(f"---{self.page.title()}---")                     # To fetch the title when login is successful
                 return "pass"                                           # passing pass to validate
         except TimeoutError:                                            # Handle in case no error found
-            print("No error found")
+            print("Login Button not found")
