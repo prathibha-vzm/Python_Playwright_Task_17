@@ -2,7 +2,7 @@ import pytest # For writing and running test cases
 from playwright.sync_api import TimeoutError # To handle Playwright timeout errors
 from zenportal.pages.base_page import BasePage  # Base class with common page methods
 from zenportal.pages.login_page import LoginPage # Page class for login functionality
-from zenportal.pages.logout_page import LogOut # Page class for Logout functionality
+from zenportal.pages.dashboard_page import LogOut # Page class for Logout functionality
 import json # For reading or writing JSON data
 
 # Open the JSON file containing test data
