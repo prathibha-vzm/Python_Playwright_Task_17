@@ -1,12 +1,10 @@
-from zenportal.pages.base_page import BasePage # Base class with common page methods
-from playwright.sync_api import TimeoutError # To handle Playwright timeout errors
-
-# LoginPage class inheriting from BasePage
+from zenportal.pages.base_page import BasePage                  # Base class with common page methods
+from playwright.sync_api import TimeoutError                    # To handle Playwright timeout errors
+                                                                # LoginPage class inheriting from BasePage
 class LoginPage(BasePage):
-    def __init__(self,page):
-        super().__init__(page)         # Initialize the BasePage with the current page instance
-        # Defining the elements with its locators
-        self.username_txt_box=page.get_by_role("textbox", name="Email")
+    def __init__(self,page):                                    # Defining the elements with its locators
+        super().__init__(page)                                  # Initialize the BasePage with the current page instance                                                        
+        self.username_txt_box=page.get_by_role("textbox", name="Email")  
         self.password_txt_box=page.get_by_role("textbox", name="Password")
         self.remember_me_check_box=page.get_by_role("checkbox", name="Checkbox demo")
         self.error_msg_1=page.get_by_text("Invalid email!")
@@ -14,7 +12,7 @@ class LoginPage(BasePage):
         self.error_msg_3=page.get_by_text("Email required!")
         self.login_btn=page.get_by_role("button", name="Sign in")
 
-    #  Method to enter username after ensuring the textbox is visible
+   #  Method to enter username after ensuring the textbox is visible
     def enter_username(self,username):
         try:
          if username:
