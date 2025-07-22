@@ -41,6 +41,7 @@ class LoginPage(BasePage):
                 self.remember_me_check_box.click()             # If checkbox is not checked, then click
         except TimeoutError:                                   # Handle in case checkbox is not found in time
             print("Checkbox not found")
+          
     # Method to click on login and locate the error message and acting according to it
     def click_login(self):
         try:
